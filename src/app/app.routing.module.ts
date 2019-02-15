@@ -14,10 +14,11 @@ const appRoutes: Routes = [
   { path: 'cursos', loadChildren: '../app/cursos/cursos.module#CursosModule' },
   { path: 'alunos', loadChildren: '../app/alunos/alunos.module#AlunosModule' },
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   // { path: 'cursos', component: CursosComponent },
   // { path: 'curso/:id', component: CursoDetalheComponent },
   // { path: 'naoEncontrado', component: CursoNaoEncontradoComponent },
-  { path: '', component: HomeComponent}
+  { path: '', component: LoginComponent}
 ];
 
 @NgModule({
